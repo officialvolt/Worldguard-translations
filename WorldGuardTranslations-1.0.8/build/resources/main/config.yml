@@ -1,0 +1,253 @@
+# WorldGuardTranslations 1.0.6
+# WorldGuard remains responsible for protection/cancellation.
+# This plugin only controls the player-facing replacement message.
+#
+# Supported output types:
+#   CHAT
+#   ACTION_BAR
+#   TITLE
+#
+# TITLE additionally uses:
+#   title:
+#   subtitle:
+#   fade-in:
+#   stay:
+#   fade-out:
+#
+# All message strings use MiniMessage, so hex colors such as <#ff5400>
+# and tags such as <bold> are supported.
+
+cooldown-seconds: 2
+
+worldguard:
+  # Suppress WorldGuard's global deny-message so the replacement message
+  # from this plugin is not shown twice.
+  suppress-default-deny-message: true
+
+messages:
+  # WorldGuard protection flags / player-facing denial categories.
+  block-break:
+    enabled: false
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Sorry, but you cannot break blocks here!</white>"
+    cooldown-seconds: 2
+
+  block-place:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Sorry, but you cannot place blocks here!</white>"
+    cooldown-seconds: 2
+
+  interact:
+    enabled: false
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Sorry, but you cannot interact here!</white>"
+    cooldown-seconds: 2
+
+  container:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Sorry, but you cannot open containers here!</white>"
+    cooldown-seconds: 2
+
+  damage-animals:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot hurt animals here!</white>"
+    cooldown-seconds: 2
+
+  entity-interact:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot interact with that entity here!</white>"
+    cooldown-seconds: 2
+
+  entity-damage:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot damage that entity here!</white>"
+    cooldown-seconds: 2
+
+  pvp:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>PvP is not allowed here!</white>"
+    cooldown-seconds: 2
+
+  chest-access:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot access inventories here!</white>"
+    cooldown-seconds: 2
+
+  ride:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot ride vehicles or animals here!</white>"
+    cooldown-seconds: 2
+
+  vehicle-place:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot place vehicles here!</white>"
+    cooldown-seconds: 2
+
+  vehicle-destroy:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot destroy vehicles here!</white>"
+    cooldown-seconds: 2
+
+  sleep:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot sleep here!</white>"
+    cooldown-seconds: 2
+
+  respawn-anchors:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use respawn anchors here!</white>"
+    cooldown-seconds: 2
+
+  lighter:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use fire here!</white>"
+    cooldown-seconds: 2
+
+  use-anvil:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use anvils here!</white>"
+    cooldown-seconds: 2
+
+  use-dripleaf:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use dripleaf here!</white>"
+    cooldown-seconds: 2
+
+  item-frame-rotation:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot modify item frames here!</white>"
+    cooldown-seconds: 2
+
+  block-trampling:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot trample blocks here!</white>"
+    cooldown-seconds: 2
+
+  frosted-ice-form:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Frost Walker cannot create ice here!</white>"
+    cooldown-seconds: 2
+
+  enderpearl:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use Ender Pearls here!</white>"
+    cooldown-seconds: 2
+
+  chorus-fruit-teleport:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold✕ Hey!</bold></#ff5400> <white>You cannot teleport with Chorus Fruit here!</white>"
+    cooldown-seconds: 2
+
+  potion-splash:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use splash potions here!</white>"
+    cooldown-seconds: 2
+
+  tnt:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot use TNT here!</white>"
+    cooldown-seconds: 2
+
+  firework-damage:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Fireworks cannot damage entities here!</white>"
+    cooldown-seconds: 2
+
+  ghast-fireball:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Ghast fireballs are not allowed here!</white>"
+    cooldown-seconds: 2
+
+  enderdragon-block-damage:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>The Ender Dragon cannot damage blocks here!</white>"
+    cooldown-seconds: 2
+
+  item-drop:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot drop items here!</white>"
+    cooldown-seconds: 2
+
+  item-pickup:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You cannot pick items up here!</white>"
+    cooldown-seconds: 2
+
+  exp-drops:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Experience cannot be dropped here!</white>"
+    cooldown-seconds: 2
+
+  fall-damage:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>Fall damage is disabled here!</white>"
+    cooldown-seconds: 2
+
+  entry:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You are not permitted to enter this area.</white>"
+    cooldown-seconds: 2
+
+  exit:
+    enabled: true
+    type: ACTION_BAR
+    message: "<#ff5400><bold>✕ Hey!</bold></#ff5400> <white>You are not permitted to leave this area.</white>"
+    cooldown-seconds: 2
+
+# Example: ACTION_BAR
+# messages:
+#   block-place:
+#     enabled: true
+#     type: ACTION_BAR
+#     message: "<red>❌ You cannot place blocks here!</red>"
+#     cooldown-seconds: 2
+
+# Example: TITLE
+# messages:
+#   pvp:
+#     enabled: true
+#     type: TITLE
+#     title: "<red><bold>NO PVP</bold></red>"
+#     subtitle: "<gray>You cannot fight players here.</gray>"
+#     fade-in: 5
+#     stay: 40
+#     fade-out: 10
+#     cooldown-seconds: 2
+
+# Example: CHAT
+# messages:
+#   container:
+#     enabled: true
+#     type: CHAT
+#     message: "<#ff5400>❌ <white>You cannot open containers here!</white>"
+#     cooldown-seconds: 2

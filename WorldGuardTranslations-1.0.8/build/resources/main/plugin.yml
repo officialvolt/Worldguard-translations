@@ -1,0 +1,16 @@
+name: WorldGuardTranslations
+version: '1.0.8'
+main: com.lockedupmc.worldguardtranslations.WorldGuardTranslations
+api-version: '1.21'
+authors: [LockedUpMC]
+description: Customizable WorldGuard denial messages for chat, action bar, and titles.
+depend: [WorldGuard]
+commands:
+  wgt:
+    description: WorldGuardTranslations administration command
+    usage: /wgt <reload|status|help>
+    permission: worldguardtranslations.admin
+permissions:
+  worldguardtranslations.admin:
+    description: Allows use of /wgt
+    default: op
